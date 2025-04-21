@@ -898,3 +898,78 @@ footer::after {
 
 
 }
+
+.reviews-section {
+    background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+    color: #f1f1f1;
+    padding: 60px 20px;
+    border-radius: 24px;
+    box-shadow: 0 0 20px;
+    max-width: 700px;
+    margin: auto;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .reviews-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: yellow;
+  }
+  
+  .review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid yellow;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: inset 0 0 8px color:yellow; 
+  }
+  
+  .review-form input,
+  .review-form textarea {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: #fff;
+    padding: 15px;
+    font-size: 1em;
+    border-radius: 12px;
+    outline: none;
+    transition: background 0.3s;
+  }
+  
+  .review-form input:focus,
+  .review-form textarea:focus {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .review-form button {
+    background: yellow;
+    color: #000;
+    padding: 12px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .review-form button:hover {
+    background:yellow;
+  }
+  
+  .reviews-list {
+    margin-bottom: 30px;
+  }
+  
+  .reviews-list div {
+    background: rgba(255, 255, 255, 0.08);
+    border-left: 4px solid yellow;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+  }
+  
