@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>general construction </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- Custom Fonts -->
+        <link rel="stylesheet" href="custom-font/fonts.css" />
+
+        <!-- Bootstrap 5 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+        <!-- Fancybox -->
+        <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen" />    
+
+        <!-- Custom Stylesheet -->
+        <link rel="stylesheet" href="css/custom.css" />
+
+        <!-- jQuery -->
+        <script src="js/jquery-1.12.1.min.js"></script>
+
+        <!-- Bootstrap 5 JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+
+    <body>
+
+        <!-- Preloader -->
+        <div id="loading">
+            <div id="loading-center">
+                <div id="loading-center-absolute">
+                    <div class="object"></div>
+                    <div class="object"></div>
+                    <div class="object"></div>
+                    <div class="object"></div>
+                    <div class="object"></div>
+                    <div class="object"></div>
+                    <div class="object"></div>
+                    <div class="object"></div>
+                    <div class="object"></div>
+                    <div class="object"></div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Preloader -->
+
+        <!-- Header -->
+        <header> 
+            <nav class="navbar navbar-expand-lg" style="background-color: black;">
+                <div class="container">
+                    <a class="navbar-brand" href="#" style="color: yellow; font-weight: bold;">general contractor
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="#" style="color: yellow;">Home</a></li>                    
+                            <li class="nav-item"><a class="nav-link" href="#about" style="color: yellow;">About Us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#services" style="color: yellow;">Services</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#portfolio" style="color: yellow;">Portfolio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact_form" style="color: yellow;">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+
+<!-- Carousel Start --> 
+<section id="home" class="home">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" style="position: relative; width: 100%; max-height: 700px; overflow: hidden;">
+
+        <div class="carousel-inner">
+
+            <!-- Slide Template -->
+            <style>
+                .carousel-caption h1, 
+                .carousel-caption h2, 
+                .carousel-caption h3, 
+                .carousel-caption p {
+                    line-height: 1.4;
+                    margin-bottom: 15px;
+                }
+
+                .carousel-caption .btn {
+                    margin-top: 20px;
+                    font-size: 18px;
+                    padding: 10px 25px;
+                    background-color: #ffc107;
+                    color: #000;
+                    border: none;
+                    border-radius: 5px;
+                    transition: background-color 0.3s;
+                }
+
+                .carousel-caption .btn:hover {
+                    background-color: #e0a800;
+                    color: #fff;
+                }
+            </style>
+
+            <!-- Slide 1: Concrete Installation -->
+            <div class="carousel-item active" style="position: relative;">
+                <img src="images/wet-concrete-driveway-2.jpg" class="d-block w-100" alt="Concrete Installation" style="width: 100%; height: 700px; object-fit: cover;">
+                <div style="background: rgba(0, 0, 0, 0.5); position: absolute; width: 100%; height: 100%; top: 0; left: 0;"></div>
+                <div class="carousel-caption text-center">
+                    <h3 style="color: yellow; font-size: 28px;">Reliable & Professional</h3>
+                    <h1 style="font-size: 50px; color: white;">Expert Concrete Installation</h1>
+                    <h2 style="color: yellow; font-size: 40px;">Driveways, Sidewalks, Patios</h2>
+                    <p style="font-size: 20px;">We specialize in high-quality concrete work for residential and commercial needs.</p>
+                    
+                </div>
+            </div>
+
+            <!-- Slide 2: Fencing Services -->
+            <div class="carousel-item" style="position: relative;">
+                <img src="images/fence 1.webp" class="d-block w-100" alt="Fencing Services" style="width: 100%; height: 700px; object-fit: cover;">
+                <div style="background: rgba(0, 0, 0, 0.5); position: absolute; width: 100%; height: 100%; top: 0; left: 0;"></div>
+                <div class="carousel-caption text-center">
+                    <h3 style="color: yellow; font-size: 28px;">Secure & Stylish</h3>
+                    <h1 style="font-size: 50px; color: white;">Wood, Iron & Chain Link Fences</h1>
+                    <p style="font-size: 20px; color: yellow;">Custom fencing solutions for privacy, security, and curb appeal.</p>
+                    
+                </div>
+            </div>
+
+            <!-- Slide 3: Patio & Outdoor Living -->
+            <div class="carousel-item" style="position: relative;">
+                <img src="images/patio1.webp" class="d-block w-100" alt="Patio Construction" style="width: 100%; height: 700px; object-fit: cover;">
+                <div style="background: rgba(0, 0, 0, 0.5); position: absolute; width: 100%; height: 100%; top: 0; left: 0;"></div>
+                <div class="carousel-caption text-center">
+                    <h3 style="color: yellow; font-size: 28px;">Custom Outdoor Spaces</h3>
+                    <h1 style="font-size: 50px;color: white;">Patios, Pergolas & Fire Pits</h1>
+                    <p style="font-size: 20px;color: yellow;">Design your dream backyard with our professional hardscaping services.</p>
+                   
+                </div>
+            </div>
+
+            <!-- Slide 4: Retaining Walls -->
+            <div class="carousel-item" style="position: relative;">
+                <img src="images/retaining wall.avif" class="d-block w-100" alt="Retaining Walls" style="width: 100%; height: 700px; object-fit: cover;">
+                <div style="background: rgba(0, 0, 0, 0.5); position: absolute; width: 100%; height: 100%; top: 0; left: 0;"></div>
+                <div class="carousel-caption text-center">
+                    <h3 style="color: yellow; font-size: 28px;">Strong & Functional</h3>
+                    <h1 style="font-size: 50px;color: white;">Retaining Wall Construction</h1>
+                    <p style="font-size: 20px; color:yellow">Support your landscape with expertly designed retaining solutions.</p>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+
+    </div>
+</section>
+<!-- Carousel End -->
+
+
+<!-- About -->
+<section id="about">
+    <div class="container about_bg">
+        <div class="row">
+            <div class="col-lg-7 col-md-6">
+                <div class="about_content">
+                    <h2>Welcome to Our General Construction Services</h2>
+                    <h3>Quality Craftsmanship in Every Project</h3>
+                    <p>We provide comprehensive construction services including fencing, patios, driveways, retaining walls, pergolas, and more. Whether it’s a small upgrade or a large outdoor transformation, our experienced team delivers top-tier results tailored to your needs.</p>
+                    <p>We take pride in delivering strong, stylish, and lasting solutions. Using quality materials and proven techniques, we ensure every project enhances the beauty, functionality, and value of your property—residential or commercial.</p>
+                    
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-lg-offset-1">
+                <div class="about_banner">
+                    <img src="images/man.png" alt="Construction Expert at Work" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About end -->
+
+
+
+<!-- Why Us -->
+<section id="why_us">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="head_title">
+                    <h2>WHY CHOOSE US?</h2>
+                    <p>As a trusted general contractor, we bring years of hands-on experience, skilled craftsmanship, and reliable project management to every job. Whether it’s fencing, patios, remodeling, or full-scale outdoor construction, we’re committed to quality, timelines, and client satisfaction.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="why_us_item">
+                    <span class="fa fa-check-square"></span>
+                    <h4>Top-Quality Materials</h4>
+                    <p>We only use proven, long-lasting materials to ensure every structure is built to last and look great for years to come.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="why_us_item">
+                    <span class="fa fa-clock-o"></span>
+                    <h4>Timely Project Delivery</h4>
+                    <p>We respect your time and keep projects on schedule without cutting corners, no matter the size or complexity.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="why_us_item">
+                    <span class="fa fa-cogs"></span>
+                    <h4>All-in-One Services</h4>
+                    <p>From start to finish, we handle everything—design, permits, construction—so you don’t have to juggle multiple contractors.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="why_us_item">
+                    <span class="fa fa-users"></span>
+                    <h4>Experienced & Trustworthy</h4>
+                    <p>Our crew is made up of skilled professionals who care about quality work and long-term client relationships.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Why Us End -->
+<!-- Services -->
+<section id="services">
+    <div class="container">
+        <h2>OUR GENERAL CONTRACTING SERVICES</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="service_item">
+                    <img src="images/residential-driveway-1.jpg" alt="Driveways" />
+                    <h3>CONCRETE & PAVING DRIVEWAYS</h3>
+                    <p>We install long-lasting concrete and paving driveways that boost your home's curb appeal and functionality. Designed for strength, durability, and drainage.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service_item">
+                    <img src="images/fence 1.webp" alt="Fencing Services" />
+                    <h3>WOOD, IRON & CHAIN LINK FENCING</h3>
+                    <p>Our fencing solutions combine privacy, security, and design. We install all types of fencing for residential and commercial properties with expert craftsmanship.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service_item">
+                    <img src="images/concrete patio.jpeg" alt="Outdoor Living" />
+                    <h3>PATIOS, PERGOLAS & OUTDOOR SPACES</h3>
+                    <p>Create the perfect outdoor living area with our custom patios, pergolas, and hardscaping. Ideal for relaxing, entertaining, or adding value to your home.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service_item">
+                    <img src="images/retaining wall.avif" alt="Retaining Walls" />
+                    <h3>RETAINING WALLS & DRAINAGE</h3>
+                    <p>We build structurally sound retaining walls for slope control, landscaping, and soil support—always tailored to your terrain and design preferences.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service_item">
+                    <img src="images/remodeling.webp" alt="Home Remodeling" />
+                    <h3>HOME REMODELING & ADDITIONS</h3>
+                    <p>From kitchens and bathrooms to full home additions, we handle remodeling projects with attention to detail, efficient timelines, and quality finishes.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service_item">
+                    <img src="images/handyman.avif" alt="General Repairs" />
+                    <h3>GENERAL REPAIRS & MAINTENANCE</h3>
+                    <p>Keep your property in top shape with our repair and maintenance services—covering drywall, flooring, painting, concrete, and more.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Services end -->
+
+
+<!-- Portfolio -->
+<section id="portfolio">
+    <div class="container portfolio_area text-center">
+        <h2>OUR CONCRETE PROJECTS</h2>
+        <p>We specialize in high-quality concrete solutions for residential and commercial projects. From durable driveways to decorative patios, our skilled team delivers precision and reliability in every job.</p>
+
+        <div id="filters">
+            <button class="button is-checked" data-filter="*">Show All</button>
+            <button class="button" data-filter=".driveways">Driveways</button>
+            <button class="button" data-filter=".patios">Patios</button>
+            <button class="button" data-filter=".foundations">Foundations</button>
+            <button class="button" data-filter=".sidewalks">Sidewalks</button>
+            <button class="button" data-filter=".retaining-walls">Retaining Walls</button>
+        </div>
+        
+        <!-- Portfolio grid -->		
+        <div class="grid">
+            <div class="grid-sizer"></div>
+
+            <div class="grid-item grid-item--width2 grid-item--height2 driveways">
+                <img alt="Concrete Driveway" src="images/concrete7.png">
+            </div>
+
+            <div class="grid-item patios">
+                <img alt="Concrete Patio" src="images/concrete patio.jpeg">
+            </div>
+
+            <div class="grid-item foundations">
+                <img alt="Concrete Foundation" src="images/concrete_foundation.webp">
+            </div>
+
+            <div class="grid-item sidewalks">
+                <img alt="Concrete Sidewalk" src="images/side_walk.jpg">
+            </div>
+
+            <div class="grid-item retaining-walls">
+                <img alt="Concrete Retaining Wall" src="images/retaining walls.webp">
+            </div>
+        </div><!-- Portfolio grid end -->
+    </div>
+</section><!-- Portfolio end -->
+
+
+
+
+
+<!-- Contact form -->
+<section id="contact_form">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Do you have any questions?</h2>
+                <h2 class="second_heading">Feel free to contact us!</h2>
+            </div>
+            <form role="form" class="form-inline text-right col-md-6" >
+                <div class="form-group">
+                    <input type="text" class="form-control" id="name" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" rows="5" id="msg" placeholder="Message"></textarea>
+                </div>
+                <button type="submit" class="btn submit_btn">Submit</button>
+            </form>				
+        </div>
+    </div>
+</section><!-- Contact form end -->
+
+<!-- Footer -->
+<footer>
+    <!-- Footer top -->
+    <div class="container footer_top">
+        <div class="row">
+            <div class="col-lg-4 col-sm-7">
+                <div class="footer_item">
+                    <h4>About Our Company</h4>
+                    <p>We are a trusted general contracting company with a strong commitment to delivering high-quality construction services. From residential renovations to large-scale commercial projects, we bring expertise, reliability, and attention to detail to every job. Our team works closely with clients to ensure their vision is realized, delivering exceptional results on time and within budget.</p>
+                </div><!-- Footer bottom end -->
+                
+</footer><!-- Footer end -->
+
+ 
+
+
+ 
+
+
+        <!-- JavaScript Files -->
+        <script src="js/bootsnav.js"></script>
+        <script src="js/isotope.js"></script>
+        <script src="js/isotope-active.js"></script>
+        <script src="js/jquery.fancybox.js?v=2.1.5"></script>
+        <script src="js/jquery.scrollUp.min.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
