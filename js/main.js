@@ -55,3 +55,48 @@ jQuery(document).ready(function ($) {
     $('.fancybox').fancybox();
 
 });
+
+
+const form = document.getElementById("review-form");
+const reviewsList = document.getElementById("reviews-list");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const message = document.getElementById("message").value;
+
+  const review = document.createElement("div");
+  review.innerHTML = `<strong>${name}</strong><p>${message}</p>`;
+  reviewsList.prepend(review);
+
+  form.reset();
+});
+
+
+
+form.addEventListener("submit", function (e) {
+    e.preventDefault();
+  
+    const name = document.getElementById("name").value;
+    const message = document.getElementById("message").value;
+  
+    fetch("submit_review.php", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: `name=${encodeURIComponent(name)}&message=${encodeURIComponent(message)}`
+    })
+    .then(res => res.text())
+    .then(data => {
+      if (data === "Success") {
+        const review = document.createElement("div");
+        review.innerHTML = `<strong>${name}</strong><p>${message}</p>`;
+        reviewsList.prepend(review);
+        form.reset();
+      } else {
+        alert("Error: " + data);
+      }
+    });
+  });
+  
+
