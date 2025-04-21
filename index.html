@@ -48,27 +48,32 @@
         </div>
         <!-- End of Preloader -->
 
-        <!-- Header -->
-        <header> 
-            <nav class="navbar navbar-expand-lg" style="background-color: black;">
-                <div class="container">
-                    <a class="navbar-brand" href="#" style="color: yellow; font-weight: bold;">general contractor
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item"><a class="nav-link" href="#" style="color: yellow;">Home</a></li>                    
-                            <li class="nav-item"><a class="nav-link" href="#about" style="color: yellow;">About Us</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#services" style="color: yellow;">Services</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#portfolio" style="color: yellow;">Portfolio</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#contact_form" style="color: yellow;">Contact Us</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        
+ <!-- Header -->
+<header> 
+    <nav class="navbar navbar-expand-lg" style="background-color: black;">
+        <div class="container">
+            <!-- Properly closed <a> tag -->
+            <a class="navbar-brand" href="#" style="color: yellow; font-weight: bold;">general contractor</a>
+            
+            <!-- Hamburger menu button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Nav links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home" style="color: yellow;">Home</a></li>                    
+                    <li class="nav-item"><a class="nav-link" href="#about" style="color: yellow;">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services" style="color: yellow;">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio" style="color: yellow;">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact_form" style="color: yellow;">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
 
 <!-- Carousel Start --> 
 <section id="home" class="home">
@@ -370,7 +375,21 @@
                 </div><!-- Footer bottom end -->
                 
 </footer><!-- Footer end -->
-
+<section id="reviews" class="reviews-section">
+    <h2>✨ Customer Reviews</h2>
+  
+    <div id="reviews-list" class="reviews-list">
+      <!-- JavaScript will populate reviews here -->
+    </div>
+  
+    <form id="review-form" class="review-form">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <textarea id="message" placeholder="Your Feedback..." required></textarea>
+      <button type="submit">Send Review</button>
+    </form>
+  </section>
+  
+  </script>
  
 
 
